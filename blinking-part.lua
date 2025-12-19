@@ -1,17 +1,17 @@
-local objeto = script.Parent -- Pega o objeto onde o script está dentro
+local object = script.Parent -- Gets the object the script is inside
 
--- Configuração do tempo (em segundos)
-local tempoVisivel = 3
-local tempoInvisivel = 3
+-- Time configuration (in seconds)
+local visibleTime = 3
+local invisibleTime = 3
 
 while true do
-	-- Fica VISÍVEL e SÓLIDO
-	objeto.Transparency = 0       -- 0 significa totalmente visível
-	objeto.CanCollide = true      -- True significa que o jogador bate nele
-	task.wait(tempoVisivel)       -- Espera o tempo configurado
+	-- Becomes VISIBLE and SOLID
+	object.Transparency = 0       -- 0 means fully visible
+	object.CanCollide = true      -- True means the player collides with it
+	task.wait(visibleTime)        -- Waits for the configured time
 	
-	-- Fica INVISÍVEL e FANTASMA
-	objeto.Transparency = 1       -- 1 significa totalmente transparente
-	objeto.CanCollide = false     -- False significa que o jogador atravessa
-	task.wait(tempoInvisivel)     -- Espera o tempo configurado
+	-- Becomes INVISIBLE and GHOST-LIKE
+	object.Transparency = 1       -- 1 means fully transparent
+	object.CanCollide = false     -- False means the player passes through it
+	task.wait(invisibleTime)      -- Waits for the configured time
 end
