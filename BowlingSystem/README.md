@@ -21,5 +21,4 @@ The system monitors the X-axis rotation. If the pin tilts beyond the threshold (
 🚀 How to Install
 
 Move LeaderboardSystem to ServerScriptService.
-Save your pin model as TargetPin in ServerStorage.
-Press Play and type !reset in chat to spawn a pin.
+Save your pin model in Workspace.
