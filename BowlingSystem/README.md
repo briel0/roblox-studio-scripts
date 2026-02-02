@@ -1,0 +1,1 @@
+put LeaderboardSystem in ServerScriptService
